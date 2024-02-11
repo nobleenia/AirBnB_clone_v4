@@ -1,11 +1,28 @@
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background: white;
     height: 70px;
     width: 100%;
+    padding: 0 30px;
     border-bottom: 1px solid #CCCCCC;
+    box-sizing: border-box;
 }
 header .logo {
     background: url("../images/logo.png") no-repeat;
     left: 20px;
     height: 100%;
+}
+
+header div:last-of-type {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+
+header div:last-of-type.available {
+    background-color: #ff545f;
 }
